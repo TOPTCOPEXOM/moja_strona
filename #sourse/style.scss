@@ -1,0 +1,154 @@
+﻿@import "null.style.scss";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+body {
+  // background-color: cyan;
+	background: url("https://www.fg-a.com/wallpapers/white-background-diamond-plate-th.jpg");
+}
+
+.content {
+
+}
+.container {
+	padding: 0px 10px 5px;
+	background: rgb(222, 222, 222);
+  max-width: 1400px;
+  margin: 0px auto;
+  height: 100%;
+	display: flex;
+	flex-direction: column;
+	// min-width: 0;
+}
+.top {
+	margin:0px 0px 25px;
+	border-radius: 0px 0px 30px 30px;
+	padding: 0px 5px 10px;
+	background: #feccb1;
+  background: -moz-linear-gradient(top,  #feccb1 0%, #f17432 0%, #ea5507 100%, #fb955e 100%);
+  background: -webkit-linear-gradient(top,  #feccb1 0%,#f17432 0%,#ea5507 100%,#fb955e 100%);
+  background: linear-gradient(to bottom,  #feccb1 0%,#f17432 0%,#ea5507 100%,#fb955e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#fb955e',GradientType=0 );
+
+  &__title {
+    font-size: 40px;
+    text-align: center;
+    margin: 0px 0px 5px;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 25px;
+  }
+}
+
+.image-slider {
+	height: 800px;
+	padding: 30px 0 70px 0 ;
+
+	&__wrapper {
+	}
+
+	&__slide {
+	}
+
+	&__image {
+		text-align: center;
+		& img{
+			max-width: 100%;
+			max-height: 800px;
+		}
+	}
+}
+
+
+.swiper-container {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+
+@mixin theme {
+	color: #ea5507;
+	&:hover{
+		color: #f17432 ;
+	}
+	&:active{
+		color: #000;
+	}
+	transition: all 0.1s linear;
+}
+
+.swiper-button-prev {
+	@include theme;
+}
+.swiper-button-next {
+	@include theme;
+}
+
+
+.main {
+	min-width: 0;
+
+	&__slider{
+		min-width: 0;
+/* 		width: 1000px;
+		height: 499px; */
+	}
+
+  &__text {
+		text-align: center;
+		font-size: 25px;
+		margin:0px 0px 10px;
+  }
+
+  &__button {
+		margin: 0px auto;
+		margin:0px 0px 15px;
+  }
+
+  &__table {
+		text-align: center;
+		float: middle;
+		clear: both;
+  }
+}
+
+
+table, th, td {
+	float: middle;
+	clear: both;
+	font-size: 30px;
+	border: 1px solid #000;
+}
+
+table{
+	width: 100%;
+}
+
+.button {
+  &__text {
+		width: 200px;
+		height: 50px;
+
+		padding: 6px 0px 0px;
+		text-align: center;
+		font-size: 30px;
+		transition: all 0.2s linear;
+		border-radius: 30px;
+
+		border: 3px solid rgb(0, 0, 0);
+		margin: 0px auto;
+		background: rgb(219, 3, 3);
+		color: rgb(255, 255, 255);
+			&:hover{
+				background: rgb(138, 138, 138);
+				color: rgb(219, 3, 3);
+				border: 2px solid rgb(219, 3, 3);
+			}
+			&:active{
+				background: rgb(73, 73, 73);
+				color: rgb(218, 83, 83)
+  }
+}
+}

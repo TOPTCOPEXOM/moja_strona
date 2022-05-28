@@ -76,8 +76,8 @@ body {
 }
 
 .container {
-				padding: 5px 10px 5px;
-				background: #dedede;
+				padding: 0px 10px 5px;
+				background: rgb(222, 222, 222);
 				max-width: 1400px;
 				margin: 0px auto;
 				height: 100%;
@@ -90,27 +90,71 @@ body {
 				        flex-direction: column;
 }
 
-.footer {
-				margin: 0px 0px 15px;
+.top {
+				margin: 0px 0px 25px;
+				border-radius: 0px 0px 30px 30px;
+				padding: 0px 5px 10px;
+				background: #feccb1;
+				background: -webkit-gradient(linear, left top, left bottom, from(#feccb1), color-stop(0%, #f17432), color-stop(100%, #ea5507), to(#fb955e));
+				background: -o-linear-gradient(top, #feccb1 0%, #f17432 0%, #ea5507 100%, #fb955e 100%);
+				background: linear-gradient(to bottom, #feccb1 0%, #f17432 0%, #ea5507 100%, #fb955e 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#feccb1", endColorstr="#fb955e",GradientType=0 );
 }
-.footer__title {
+.top__title {
 				font-size: 40px;
 				text-align: center;
 				margin: 0px 0px 5px;
 }
-.footer__text {
+.top__text {
 				text-align: center;
 				font-size: 25px;
 }
 
-.main__foto {
-				display: -webkit-box;
-				display: -ms-flexbox;
-				display: flex;
-				-webkit-box-pack: center;
-				    -ms-flex-pack: center;
-				        justify-content: center;
-				margin: 0px 0px 15px;
+.image-slider {
+				height: 800px;
+				padding: 30px 0 70px 0;
+}
+.image-slider__image {
+				text-align: center;
+}
+.image-slider__image img {
+				max-width: 100%;
+				max-height: 800px;
+}
+
+.swiper-button-prev {
+				color: #ea5507;
+				-webkit-transition: all 0.1s linear;
+				-o-transition: all 0.1s linear;
+				transition: all 0.1s linear;
+}
+.swiper-button-prev:hover {
+				color: #f17432;
+}
+.swiper-button-prev:active {
+				color: #000;
+}
+
+.swiper-button-next {
+				color: #ea5507;
+				-webkit-transition: all 0.1s linear;
+				-o-transition: all 0.1s linear;
+				transition: all 0.1s linear;
+}
+.swiper-button-next:hover {
+				color: #f17432;
+}
+.swiper-button-next:active {
+				color: #000;
+}
+
+.main {
+				min-width: 0;
+}
+.main__slider {
+				min-width: 0;
+				/* 		width: 1000px;
+						height: 499px; */
 }
 .main__text {
 				text-align: center;
@@ -148,17 +192,17 @@ table {
 				-o-transition: all 0.2s linear;
 				transition: all 0.2s linear;
 				border-radius: 30px;
-				border: 3px solid black;
+				border: 3px solid rgb(0, 0, 0);
 				margin: 0px auto;
-				background: #db0303;
-				color: white;
+				background: rgb(219, 3, 3);
+				color: rgb(255, 255, 255);
 }
 .button__text:hover {
-				background: #8a8a8a;
-				color: #db0303;
-				border: 2px solid #db0303;
+				background: rgb(138, 138, 138);
+				color: rgb(219, 3, 3);
+				border: 2px solid rgb(219, 3, 3);
 }
 .button__text:active {
-				background: #494949;
-				color: #da5353;
+				background: rgb(73, 73, 73);
+				color: rgb(218, 83, 83);
 }

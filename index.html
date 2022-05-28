@@ -2,6 +2,10 @@
 <html lang="pl">
 
 <head>
+	<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/style.css" />
 	<title> McŁowicz </title>
@@ -55,15 +59,30 @@
 </body>
 	<div class="content">
 		<div class="container">
-			<footer class="footer">
-				<div class="footer__title">Robert Makłowicz - fanpage </div>
-				<div class="footer__text">Robert Makłowicz - polski krytyk kulinarny, dziennikarz, pisarz, publicysta, podróżnik i youtuber.</div>
-			</footer>
-			<main class="main">
-				<div class="main__foto">
-					<img src="https://th.bing.com/th/id/R.15d63035e8becaf2727035260beeb0ec?rik=JpvhshSRwOc0JA&pid=ImgRaw&r=0" width="450" height="290" valign="top"> 
-				</img>
+			<div class="top">
+				<div class="top__title">Robert Makłowicz - fanpage </div>
+				<div class="top__text">Robert Makłowicz - polski krytyk kulinarny, dziennikarz, pisarz, publicysta, podróżnik i youtuber.</div>
 			</div>
+			<div class="main">
+				<div class="image-slider swiper">
+					<div class="image-slider__wrapper swiper-wrapper">
+						<div class="image-slider__slide swiper-slide">
+							<div class="image-slider__image">
+								<img src="https://th.bing.com/th/id/R.15d63035e8becaf2727035260beeb0ec?rik=JpvhshSRwOc0JA&pid=ImgRaw&r=0">
+							</div>
+						</div>
+						<div class="image-slider__slide swiper-slide">
+							<div class="image-slider__image">
+								<img src="https://scontent.fpoz4-1.fna.fbcdn.net/v/t1.15752-9/271932342_270714655158500_2524135838116207618_n.png?_nc_cat=106&ccb=1-7&_nc_sid=ae9488&_nc_ohc=-tGLaadQJQkAX8X0Cjl&_nc_ht=scontent.fpoz4-1.fna&oh=03_AVJsYD5rcnUINNfrtqTC7LNqOWIDOGSBHh_fBvi_YYD00A&oe=62B733C7">
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+
+				</div>
+				</div>
 				<div class="main__text">Jest synem marynarza Włodzimierza Makłowicza i Beaty z domu Preiss. Ma młodszą siostrę Dominikę. Pochodzi z rodziny o korzeniach polskich, ukraińskich, ormiańskich, węgierskich i austriackich.
 					Jest absolwentem V Liceum Ogólnokształcącego im. Augusta Witkowskiego w Krakowie. W latach 1982–1989 studiował prawo, a następnie historię na Uniwersytecie Jagiellońskim.
 					Na przełomie 1989 i 1990 mieszkał w Wielkiej Brytanii, gdzie przez kilka miesięcy pracował jako robotnik w Kingston upon Thames. Podczas pobytu na emigracji poznawał różne kuchnie świata, co po powrocie do Polski w 1990 skłoniło go do tego, by zostać krytykiem kulinarnym.
@@ -101,5 +120,7 @@
 			</main>
 		</div>
 	</div>
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	<script src="/js/script.js"></script>
 </body>
 </html>
