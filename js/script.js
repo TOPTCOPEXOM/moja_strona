@@ -2,10 +2,13 @@ new Swiper('.image-slider', {
   // Optional parameters
   /* direction: 'vertical', */
   loop: true,
+	loopedSlides: 4,
 
-  // If we need pagination
+  // pagination
   pagination: {
     el: '.swiper-pagination',
+		clickable: true,
+		dynamicBullets: true,
   },
 
   // Navigation arrows
@@ -14,8 +17,12 @@ new Swiper('.image-slider', {
     prevEl: '.swiper-button-prev',
   },
 
-  // And if we need scrollbar
+  // scrollbar
   scrollbar: {
     el: '.swiper-scrollbar',
   },
+
+	// autoHeight: true,
+
+
 });

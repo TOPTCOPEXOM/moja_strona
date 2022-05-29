@@ -77,7 +77,11 @@ body {
 
 .container {
 				padding: 0px 10px 5px;
-				background: rgb(222, 222, 222);
+				background: #f2f9fe;
+				background: -webkit-gradient(linear, left top, left bottom, from(#f2f9fe), to(#d6f0fd));
+				background: -o-linear-gradient(top, #f2f9fe 0%, #d6f0fd 100%);
+				background: linear-gradient(to bottom, #f2f9fe 0%, #d6f0fd 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f2f9fe", endColorstr="#d6f0fd",GradientType=0 );
 				max-width: 1400px;
 				margin: 0px auto;
 				height: 100%;
@@ -111,41 +115,74 @@ body {
 }
 
 .image-slider {
-				height: 800px;
-				padding: 30px 0 70px 0;
+				height: 680px;
+				border-radius: 30px;
+				margin: 0px 0px 40px;
+				background: #feccb1;
+				background: -webkit-gradient(linear, left top, left bottom, from(#feccb1), color-stop(0%, #f17432), color-stop(100%, #ea5507), to(#fb955e));
+				background: -o-linear-gradient(top, #feccb1 0%, #f17432 0%, #ea5507 100%, #fb955e 100%);
+				background: linear-gradient(to bottom, #feccb1 0%, #f17432 0%, #ea5507 100%, #fb955e 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#feccb1", endColorstr="#fb955e",GradientType=0 );
+}
+.image-slider__slide {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-pack: center;
+				    -ms-flex-pack: center;
+				        justify-content: center;
+				-webkit-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
 }
 .image-slider__image {
 				text-align: center;
 }
 .image-slider__image img {
 				max-width: 100%;
-				max-height: 800px;
+				max-height: 600px;
+}
+
+.swiper-pagination {
+				bottom: 0;
+}
+.swiper-pagination-bullet {
+				width: 15px;
+				height: 15px;
+				font-size: 24px;
+				background-color: rgb(255, 255, 255);
 }
 
 .swiper-button-prev {
-				color: #ea5507;
+				color: #fae9e0;
 				-webkit-transition: all 0.1s linear;
 				-o-transition: all 0.1s linear;
 				transition: all 0.1s linear;
 }
 .swiper-button-prev:hover {
-				color: #f17432;
+				color: #ffaa7c;
 }
 .swiper-button-prev:active {
 				color: #000;
 }
+.swiper-button-prev::after {
+				font-size: 60px;
+}
 
 .swiper-button-next {
-				color: #ea5507;
+				color: #fae9e0;
 				-webkit-transition: all 0.1s linear;
 				-o-transition: all 0.1s linear;
 				transition: all 0.1s linear;
 }
 .swiper-button-next:hover {
-				color: #f17432;
+				color: #ffaa7c;
 }
 .swiper-button-next:active {
 				color: #000;
+}
+.swiper-button-next::after {
+				font-size: 60px;
 }
 
 .main {

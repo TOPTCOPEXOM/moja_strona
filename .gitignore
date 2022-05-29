@@ -1,10 +1,7 @@
 /prepros.config
 img/foto/81998.jpg
 img/foto/246244.jpg
-js/desktop.ini
 .gitignore
-css/desktop.ini
-/#sourse/desktop.ini
-img/desktop.ini
-img/foto/desktop.ini
-/refs/desktop.ini
+img\foto\foto2
+img\foto\foto3
+img\foto\unknown.png
