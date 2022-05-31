@@ -141,6 +141,7 @@ body {
 .image-slider__image img {
 				max-width: 100%;
 				max-height: 600px;
+				border-radius: 30px;
 }
 
 .swiper-pagination {
